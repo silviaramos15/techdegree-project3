@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <title>Registration form</title>
+  </head>
+
+  <body>
+    <header role="banner">
+       <h1>The code review</h1>
+    </header>
+
+    <main>
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing in your inbox</p>
+
+        <form action="index.html" method="post">
+            <fieldset>
+                <legend><span>Contact Information</span></legend>
+                    <div class="flex-form">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="user_name" placeholder="Required" required>
+                    </div>
+
+                    <div class="flex-form">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="user_email" placeholder="Required" required>
+                    </div>
+
+                    <div class="flex-form">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="user_number">
+                    </div>
+
+                    <div class="flex-form">
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" name="user_address">
+                     </div>
+
+                     <div class="flex-form">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="user_city" placeholder="Required" required>
+                    </div>
+
+                    <div class="flex-form">
+                        <label for="state">State</label>
+                        <select id="state" name="user_state">
+                            <option value="" disabled selected>Choose State</option>
+                            <option value="england">England</option>
+                            <option value="northern_ireland">Northern Ireland</option>
+                            <option value="scotland">Scotland</option>
+                            <option value="wales">Wales</option>
+                        </select>
+                     </div>
+
+                     <div class="flex-form zip">
+                        <label for="zip">Zip Code</label>
+                        <input type="text" id="zip" name="user_zip">
+                    </div>
+            </fieldset>
+
+            <fieldset class="newsletter">
+                <legend><span>Newsletter</span></legend>
+                    <label class="form-description">Select the newsletters you would like to receive</label>
+                        <div>
+                            <input type="checkbox" id="html" value="html_interest" name="user_preferances">
+                            <label for="html" class="radio">HTML News</label><br>
+
+                            <input type="checkbox" id="css" value="css_interest" name="user_preferances">
+                            <label for="css" class="radio">CSS News</label><br>
+
+                            <input type="checkbox" id="javascript" value="javascript_interest" name="user_preferances">
+                            <label for="javascript" class="radio">JavaScript News</label><br>
+                         </div>
+
+                    <label class="form-description">Newsletter format</label>
+                        <div>
+                            <input type="radio" id="format_html" value="html_format" name="user_format">
+                            <label for="format_html" class="radio">HTML</label><br>
+
+                            <input type="radio" id="format_plain" value="plain_format" name="user_format">
+                            <label for="format_plain">Plain text</label>
+                        </div>
+
+                        <div class="newsletter">
+                            <label for="topics" class="form-description">Other topics you'd like to hear about</label>
+                            <textarea id="topics" name="user_topics"></textarea>
+                        </div>
+            </fieldset>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
+
+  </body>
+
+</html>
